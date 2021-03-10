@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Todo os conteudos dentro dessa div */
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Box com todo o conteudo do topo da pagina */
+.box-superior {
+    width: 100%;
+    background-image: linear-gradient(rgb(34, 107, 241), rgb(118, 166, 255));
+    color: #fff;
+}
+
+/* Barra de menu superior */
+nav {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 124px;
+    height: 34px;
+}
+
+.links-menu{
+    text-align: center;
+}
+
+.links {
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.links:hover{
+    text-decoration: underline;
+}
+
+.entrar div {
+    width: 65px;
+    height: 35px;
+    background-color: #fff;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.entrar p {
+    text-align: center;
+    line-height: 35px;
+    font-size: 10pt;
+}
+
+/* Conteudo central */
+.main-box {
+    width: 100%;
+    height: 80vh;
+    color: #fff;
+    display: flex;
+}
+
+.img-esq {
+    width: 25%;
+    margin-top: 73px;
+    background: url(../images/lateral_esq.svg) no-repeat right;
+}
+
+.img-dir {
+    width: 25%;
+    margin-top: 30px;
+    background: url(../images/lateral_dir.svg) no-repeat left;
+}
+
+/* Box central */
+.main-center-box{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 60%;
+}
+
+.main-text-box{
+    text-align: center;
+    font-size: 13pt;
+}
+
+.main-text-box h1 {
+    font-size: 40pt;
+}
+
+.main-text-box p{
+    margin-top: 45px;
+}
+
+.main-links {
+    width: 100%;
+}
+
+.baixar-dc div{
+    width: 100px;
+    height: 50px;
+    display: inline;
+    background-color: #fff;
+    color: #000;
+}
+
+.abrir-dc div {
+    width: 100px;
+    height: 50px;
+    display: inline;
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* Geral */
+a {
+    text-decoration: none;
+}
