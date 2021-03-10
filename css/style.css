@@ -8,11 +8,14 @@ body{
     background-color: #fff;
     color: #000;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
 }
 
 /* Todo os conteudos dentro dessa div */
 .wrapper {
     max-width: 100%;
+    min-width: 700px;
     margin: 0 auto;
 }
 
@@ -57,6 +60,7 @@ nav {
     width: 65px;
     height: 35px;
     background-color: #fff;
+    color: #23272a;
     border-radius: 25px;
     text-align: center;
 }
@@ -101,32 +105,58 @@ nav {
 
 .main-text-box h1 {
     font-size: 40pt;
+    display: block;
 }
 
 .main-text-box p{
     margin-top: 45px;
 }
 
-.main-links {
+.main-links{
     width: 100%;
+    justify-content: center;
+    display: flex;
+    line-height: 24px;
 }
 
-.baixar-dc div{
-    width: 100px;
-    height: 50px;
+.main-links .baixar-dc div,
+.main-links .abrir-dc div
+{
     display: inline;
+    border-radius: 28px;
+    margin: 0 20px;
+    padding: 16px 32px;
+}
+.download-icon {
+    margin-top: auto;
+}
+
+.baixar-dc .div-baixar{
     background-color: #fff;
-    color: #000;
+    color: #23272a;
+    float: left;
+}
+
+.baixar-dc:hover div, .entrar:hover div {
+    color: #7289da;
+    -webkit-box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+}
+
+.abrir-dc, .baixar-dc {
+    margin-top: 24px;
 }
 
 .abrir-dc div {
-    width: 100px;
-    height: 50px;
-    display: inline;
-    background-color: #000;
+    background-color: #23272a;
     color: #fff;
+    float: right;
 }
 
+.abrir-dc:hover div{
+    -webkit-box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+}
 
 /* Geral */
 a {
