@@ -32,7 +32,6 @@ nav {
   width: 90%;
   height: 80px;
   margin: 0 auto;
-  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,10 +63,6 @@ nav {
   background-color: #fff;
   color: #23272a;
   border-radius: 25px;
-  text-align: center;
-}
-
-.entrar p {
   text-align: center;
   line-height: 35px;
   font-size: 10pt;
@@ -162,6 +157,7 @@ nav {
 .baixar-playstore {
   display: none;
 }
+
 /* Geral */
 a {
   text-decoration: none;
@@ -179,26 +175,6 @@ hr {
 }
 
 /* mobile */
-#nav-toggle {
-  position: absolute;
-  top: -100px;
-}
-
-nav .icon-burger {
-  display: none;
-  position: absolute;
-  right: 7%;
-  top: 6.5%;
-  transform: translateY(-50%);
-}
-
-nav .icon-burger .line {
-  width: 27px;
-  height: 5px;
-  background-color: #fff;
-  margin: 3px;
-  transition: all 0.3s ease-in-out;
-}
 
 .links-mobile {
   display: none;
@@ -216,10 +192,8 @@ nav .icon-burger .line {
 
 @media screen and (max-width: 415px) {
   nav .links-menu,
-  .entrar div,
   .img-dir,
   .img-esq,
-  .abrir-dc,
   .baixar-dc {
     display: none;
     /* visibility: collapse; */
@@ -249,15 +223,34 @@ nav .icon-burger .line {
     line-height: 32px;
   }
 
+  .main-links {
+    display: block;
+  }
+
+  .baixar-playstore,
+  .main-links .abrir-dc div {
+    border-radius: 28px;
+    display: block;
+    margin-top: 25px;
+    margin: 25px 0 0 0;
+    font-size: 14pt;
+    text-align: center;
+  }
   .baixar-playstore {
+    width: 70%;
     background-color: #fff;
     color: #23272a;
-    border-radius: 28px;
-    display: flex;
-    margin: 0 0 0 -40px;
-    margin-top: 25px;
-    padding: 16px 32px;
-    font-size: 14pt;
+    padding: 15px;
+  }
+  .main-links .abrir-dc div {
+    width: 80%;
+    background-color: #23272a;
+    color: #fff;
+  }
+
+  .entrar div {
+    padding: 1px;
+    margin-right: -60px;
   }
 
   li {
@@ -298,10 +291,6 @@ nav .icon-burger .line {
     margin-top: 10px;
     background: #f6f6f6;
     color: #00b0f4;
-  }
-
-  nav :root ~ .links-mobile {
-    bottom: 0;
   }
 
   .painel-lateral {
