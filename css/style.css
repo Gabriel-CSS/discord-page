@@ -3,12 +3,33 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: Whitney;
+  src: url(../fonts/whitney-medium.otf);
+}
+
+@font-face {
+  font-family: Whitney-bold;
+  src: url(../fonts/whitney-bold.otf);
+}
+
+@font-face {
+  font-family: Whitney-book;
+  src: url(../fonts/whitney-book.otf);
+}
+
+@font-face {
+  font-family: Whitney-light;
+  src: url(../fonts/whitney-light.otf);
+}
+
 body {
   margin: 0;
   background-color: #fff;
   color: #000;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+  font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.7;
 }
@@ -61,30 +82,30 @@ nav {
   width: 65px;
   height: 35px;
   background-color: #fff;
-  color: #23272a;
+  color: #434647;
   border-radius: 25px;
   text-align: center;
   line-height: 35px;
-  font-size: 10pt;
+  font-size: 14px;
 }
 
 /* Conteudo central */
 .main-box {
   width: 100%;
-  height: 80vh;
+  height: 83vh;
   color: #fff;
   display: flex;
 }
 
 .img-esq {
   width: 25%;
-  margin-top: 73px;
+  margin-top: 94px;
   background: url(../images/lateral_esq.svg) no-repeat right;
 }
 
 .img-dir {
   width: 25%;
-  margin-top: 30px;
+  margin-top: 50px;
   background: url(../images/lateral_dir.svg) no-repeat left;
 }
 
@@ -97,16 +118,19 @@ nav {
 
 .main-text-box {
   text-align: center;
-  font-size: 13pt;
 }
 
 .main-text-box h1 {
-  font-size: 40pt;
+  font-family: Whitney-bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 42pt;
   display: block;
 }
 
 .main-text-box p {
-  margin-top: 45px;
+  font-family: Whitney-book, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 24px;
+  line-height: 32px;
+  font-size: 19px;
 }
 
 /* Dois links inferiores "baixar..." e "abrir...") */
@@ -115,6 +139,7 @@ nav {
   justify-content: center;
   display: flex;
   line-height: 24px;
+  font-size: 20px;
 }
 
 .main-links .baixar-dc div,
@@ -127,7 +152,7 @@ nav {
 
 .baixar-dc .div-baixar {
   background-color: #fff;
-  color: #23272a;
+  color: #373a3d;
   float: left;
 }
 
@@ -221,6 +246,8 @@ hr {
   .main-text-box p {
     margin-top: 25px;
     line-height: 32px;
+    font-size: 21px;
+    vertical-align: baseline;
   }
 
   .main-links {
@@ -233,8 +260,10 @@ hr {
     display: block;
     margin-top: 25px;
     margin: 25px 0 0 0;
-    font-size: 14pt;
+    font-family: Whitney-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-align: center;
+    font-size: 20px;
+    font-weight: 700;
   }
   .baixar-playstore {
     width: 70%;
@@ -249,8 +278,10 @@ hr {
   }
 
   .entrar div {
+    color: #23272a;
     padding: 1px;
     margin-right: -60px;
+    font-family: Whitney-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
   li {
