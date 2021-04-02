@@ -144,9 +144,19 @@
                 </div>
                 <div class="img-dir"></div>
             </div>
-            <!-- <img src="images/lateral_esq.svg" class="img-mobile"> -->
         </div>
     </div>
+
+    <script type="text/javascript" charset="utf-8">
+        document.getElementsByClassName("menu-icon")[0]
+            .addEventListener("click", function () {
+                document.getElementsByClassName("painel-lateral")[0].className = "painel-lateral show-painel-lateral";
+            });
+        document.getElementsByClassName("fechar-btn")[0]
+            .addEventListener("click", function () {
+                document.getElementsByClassName("painel-lateral")[0].className = "painel-lateral hide-painel-lateral";
+            });
+    </script>
 </body>
 
 </html>

@@ -325,7 +325,6 @@ hr {
   }
 
   .painel-lateral {
-    display: none;
     position: fixed;
     z-index: 999;
     left: 30px;
@@ -340,6 +339,14 @@ hr {
     transition: all 0.5s ease-in-out;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+  }
+
+  .show-painel-lateral {
+    display: block;
+  }
+
+  .hide-painel-lateral {
+    display: none;
   }
 
   .div-interna {
