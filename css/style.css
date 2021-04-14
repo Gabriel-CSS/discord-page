@@ -61,6 +61,7 @@ nav {
 .logo {
   width: 124px;
   height: 34px;
+  display: flex;
 }
 
 .links-menu {
@@ -217,7 +218,6 @@ hr {
 body.login {
   background: #2e2e30 url('../images/bg-login.jpg') center;
   background-size: cover;
-  
 }
 
 div.logo-login {
@@ -325,7 +325,7 @@ h5 {
   line-height: 16px;
 }
 
-.btn-login {
+#btn-login {
   color: #fff;
   background-color: #7289da;
   font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -340,15 +340,15 @@ h5 {
   border: none;
 }
 
-.btn-login:hover {
+#btn-login:hover {
   background-color: #677bc4;
 }
 
-.btn-login:active {
+#btn-login:active {
   background-color: #5b6eae;
 }
 
-.btn-login:focus {
+#btn-login:focus {
   outline: none;
 }
 
@@ -382,6 +382,20 @@ h5 {
   font-size: 16px;
   line-height: 20px;
   font-family: Whitney-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#error-span {
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.error,
+#error-span {
+  color: #f04747;
+}
+
+button {
+  cursor: pointer;
 }
 
 /* media queries - design responsivo */

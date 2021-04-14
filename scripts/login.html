@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Login | Discord</title>
 </head>
 
 <body class="login">
     <div>
         <div class="logo-login">
-            <a class="logo" href="index.html">
-                <img src="images/discord-logo-white.png" width="140px" height="45px">
+            <a class="logo" href="../index.html">
+                <img src="../images/discord-logo-white.png" width="140px" height="45px">
             </a>
         </div>
-        <form class="form-box">
+        <div class="form-box">
             <div class="center-box">
                 <div class="left-box">
                     <div class="boas-vindas">
@@ -37,18 +38,19 @@
                                 <input class="input" name="senha" type="password" aria-label="Senha">
                             </div>
                         </div>
-                        <a href="index.html">Esqueceu sua senha?</a>
-                        <button type="submit" class="btn-login">
+                        <p id="error-span"></p>
+                        <a href="../index.html">Esqueceu sua senha?</a>
+                        <button type="submit" id="btn-login">
                             Entrar
                         </button>
                         <div class="registrar">
                             <span>Precisando de uma conta?</span>
-                            <a href="index.html">Registre-se</a>
+                            <a href="../index.html">Registre-se</a>
                         </div>
                     </div>
                 </div>
                 <div class="right-box">
-                    <img src="images/qrcode.png" width="176px" height="176px">
+                    <img src="../images/qrcode.png" width="176px" height="176px">
                     <h1>Entrar com Código QR</h1>
                     <div class="info-qrcode">
                         <span>Escaneie isto com o <strong>app móvel do Discord</strong> para fazer login
@@ -56,8 +58,9 @@
                     </div>
                 </div>
             </div>
-        </form>
+        </div>
     </div>
+    <script src="../js/login.js"></script>
 </body>
 
 </html>

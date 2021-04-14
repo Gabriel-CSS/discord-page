@@ -6,6 +6,13 @@ Este site está sendo desenvolvido individualmente como projeto da discíplina d
 
 Projeto hospedado: https://gabriel-css-discord.netlify.app/
 
+###### Instruções de login
+
+```
+Email: eve.holt@reqres.in
+Senha: cityslicka
+```
+
 ## Etapas do projeto
 
 ### PROJETO 1 - HTML e CSS ✔️:
