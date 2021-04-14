@@ -8,7 +8,7 @@ Projeto hospedado: https://gabriel-css-discord.netlify.app/
 
 ## Etapas do projeto
 
-### PROJETO 1 - HTML e CSS:
+### PROJETO 1 - HTML e CSS ✔️:
 
     Elaboração de uma página web de conteúdo estático, utilizando apenas as tecnologias HTML e CSS para construção de um layout de um website.
 
