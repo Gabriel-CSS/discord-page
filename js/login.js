@@ -16,6 +16,13 @@ document.getElementById("btn-login")
             senha_h5.innerHTML = "SENHA";
             email_h5.className = "";
             senha_h5.className = "";
+
+            if(entrada === "" && senha === ""){
+                senha_h5.className = "error";
+                senha_h5.innerHTML = "SENHA - Este campo é obrigatório";
+                email_h5.className = "error";
+                return email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE - Este campo é obrigatório";
+            }
         
         var params = {
             // email: "eve.holt@reqres.in",

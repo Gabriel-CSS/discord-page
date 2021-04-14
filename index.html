@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>DISCORD | Seu Lugar para Papear e Ficar De Boa</title>
 </head>
 
@@ -144,9 +146,58 @@
                 <div class="img-dir"></div>
             </div>
         </div>
+        <div class="divisor"></div>
+        <!-- Tela de Login -->
+        <div class="box-login">
+            <div class="form-box">
+                <div class="center-box">
+                    <div class="left-box">
+                        <div class="boas-vindas">
+                            Boas-vindas de volta!
+                        </div>
+                        <div class="animados">
+                            Estamos muito animados em te ver novamente!
+                        </div>
+                        <div class="login-infos">
+                            <div class="login-entrada">
+                                <h5>E-MAIL OU NÚMERO DE TELEFONE</h5>
+                                <div class="div-input">
+                                    <input class="input" name="email" type="text"
+                                        aria-label="E-mail ou número de telefone">
+                                </div>
+                            </div>
+                            <div class="login-senha">
+                                <h5>SENHA</h5>
+                                <div class="div-input">
+                                    <input class="input" name="senha" type="password" aria-label="Senha">
+                                </div>
+                            </div>
+                            <p id="error-span"></p>
+                            <a href="../index.html">Esqueceu sua senha?</a>
+                            <button type="submit" id="btn-login">
+                                Entrar
+                            </button>
+                            <div class="registrar">
+                                <span>Precisando de uma conta?</span>
+                                <a href="../index.html">Registre-se</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <img src="../images/qrcode.png" width="176px" height="176px">
+                        <h1>Entrar com Código QR</h1>
+                        <div class="info-qrcode">
+                            <span>Escaneie isto com o <strong>app móvel do Discord</strong> para fazer login
+                                imediatamente.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
