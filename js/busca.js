@@ -84,8 +84,9 @@ btnBuscar.addEventListener('click', async () => {
                     emissora.innerHTML = 'Emissora: ' + docs[i].show.webChannel.name;
                 }
                 
-                if (docs[i].show.webChannel.country.name != null){
-                    pais.innerHTML = 'País: ' + docs[i].show.webChannel.country.name;
+                if (docs[i].show.webChannel.country != null){
+                    if (docs[i].show.webChannel.country.name != null)
+                        pais.innerHTML = 'País: ' + docs[i].show.webChannel.country.name;
                 }else{
                     pais.innerHTML = 'País: unknown';
                 }
