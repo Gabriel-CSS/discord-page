@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/busca.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>DISCORD | Seu Lugar para Papear e Ficar De Boa</title>
 </head>
@@ -146,7 +147,9 @@
                 <div class="img-dir"></div>
             </div>
         </div>
+
         <div class="divisor"></div>
+
         <!-- Tela de Login -->
         <div class="box-login">
             <div class="form-box">
@@ -194,10 +197,36 @@
                 </div>
             </div>
         </div>
+
+        <div class="divisor"></div>
+
+        <div class="box-busca">
+            <div class="div-busca">
+                <div class="center-busca">
+                    <div class="boas-vindas">
+                        Search - API TVMaze
+                    </div>
+                    <div class="animados" style="margin-bottom: 30px;">
+                        Esta API retorna informações sobre séries de TV de acordo com os termos informados na busca.
+                    </div>
+
+                    <div class="div-input">
+                        <input class="input input-busca" name="busca" type="text"
+                            placeholder="Informe o nome de alguma série de tv a ser buscada">
+                    </div>
+                    <button type="submit" id="btn-buscar">
+                        Buscar
+                    </button>
+                </div>
+
+                <ul id="ul"></ul>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/busca.js"></script>
 </body>
 
 </html>

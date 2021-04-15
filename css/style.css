@@ -219,6 +219,10 @@ hr {
   background-color: #2e2e30;
 }
 
+.hide {
+  display: none;
+}
+
 /* media queries - design responsivo */
 
 @media screen and (max-width: 415px) {
