@@ -5,7 +5,7 @@ btnBuscar.addEventListener('click', async () => {
     ul = document.getElementById('ul');
     ul.innerHTML = "";
     
-    var res = await axios.get('http://api.tvmaze.com/search/shows?q=' + busca.value);
+    var res = await axios.get('https://api.tvmaze.com/search/shows?q=' + busca.value);
     var docs = res.data;
 
     for (var i = 0; i < docs.length && i < 5; i++) {
