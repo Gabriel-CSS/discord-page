@@ -9,6 +9,10 @@
     background-size: cover;
   }
   
+.hide {
+  display: none;
+}
+
   .form-box {
     width: 784px;
     height: 408px;

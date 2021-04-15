@@ -1,13 +1,47 @@
 
 const url = "https://reqres.in/api/";
-var _token = "";
+var _token = localStorage.getItem("token"),
+box_login = document.getElementsByClassName("box-login")[0],
+box_busca = document.getElementsByClassName("box-busca")[0],
+div_entrar = document.getElementById("div-entrar"),
+error_span = document.getElementById("error-span");
+    
+    if(_token) {
+        logar();
+    }else{
+        deslogar();
+    }
+
+function logar(){
+    box_login.className = "box-login hide";
+    box_busca.className = "box-busca";
+    div_entrar.innerHTML = "Deslogar";
+    div_entrar.className = "logado";
+}
+
+function deslogar(){
+    localStorage.removeItem("token");
+    box_login.className = "box-login";
+    box_busca.className = "box-busca hide";
+    div_entrar.innerHTML = "Entrar";
+    div_entrar.className = "deslogado";
+    error_span.innerHTML = "";
+}
+
+function onClickEntrar() {
+    if(div_entrar.className === "logado"){
+        deslogar();
+        error_span.innerHTML = "Você deslogou-se. Logue novamente para ver a tela de busca.";
+    }else if(div_entrar.className === "deslogado"){
+        console.log("agora voce vai logar");
+    }
+}
 
 document.getElementById("btn-login")
     .addEventListener("click", async () => {
 
         var entrada = document.getElementsByClassName("input")[0].value,
             senha = document.getElementsByClassName("input")[1].value,
-            error_span = document.getElementById("error-span"),
             email_h5 = document.getElementsByTagName("h5")[0],
             senha_h5 = document.getElementsByTagName("h5")[1];
 
@@ -36,7 +70,11 @@ document.getElementById("btn-login")
                 if(res.status === 200){
                     var res2 = res.data;
                     _token = res2.token;
-                    error_span.innerHTML = "Logado com sucesso! TOKEN_ID: " + _token;
+                    error_span.innerHTML = "Você logou com sucesso!";
+                    localStorage.setItem("token", _token);
+                    setTimeout(function(){
+                        logar();
+                    }, 4000);
                 }
             })
             .catch((error) => {

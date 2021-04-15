@@ -97,3 +97,7 @@
       color: #f04747;
       font-size: 15pt;
   }
+
+  .hide {
+    display: none;
+  }
