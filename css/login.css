@@ -15,7 +15,7 @@
 
   .form-box {
     width: 784px;
-    height: 408px;
+    height: 420px;
     margin: 0 auto;
     margin-top: 100px;
     color: #72767d;
@@ -172,7 +172,7 @@
   }
   
   #error-span {
-    font-size: 13px;
+    font-size: 15px;
     margin-top: 6px;
   }
   
@@ -183,6 +183,10 @@
   
   button {
     cursor: pointer;
+  }
+
+  .login-infos a:hover {
+    text-decoration: underline;
   }
 
 

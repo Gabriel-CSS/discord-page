@@ -31,7 +31,7 @@ function deslogar(){
 function onClickEntrar() {
     if(div_entrar.className === "logado"){
         deslogar();
-        error_span.innerHTML = "Você deslogou-se. Logue novamente para ver a tela de busca.";
+        error_span.innerHTML = "Você deslogou. Logue novamente para ver a tela de busca.";
     }else if(div_entrar.className === "deslogado"){
         console.log("agora voce vai logar");
     }
@@ -70,7 +70,7 @@ document.getElementById("btn-login")
                 if(res.status === 200){
                     var res2 = res.data;
                     _token = res2.token;
-                    error_span.innerHTML = "Você logou com sucesso!";
+                    error_span.innerHTML = "Você logou com sucesso. Logo a tela de busca será mostrada";
                     localStorage.setItem("token", _token);
                     setTimeout(function(){
                         logar();
