@@ -2,11 +2,16 @@ var btnBuscar = document.getElementById("btn-buscar");
 
 btnBuscar.addEventListener('click', async () => {
     var busca = document.getElementsByClassName("input")[2],
-    ul = document.getElementById('ul');
+    ul = document.getElementById('ul'),
+    not_found = document.getElementsByClassName("not-found")[0];
     ul.innerHTML = "";
+    not_found.className = "not-found hide";
     
     var res = await axios.get('https://api.tvmaze.com/search/shows?q=' + busca.value);
     var docs = res.data;
+
+    if(docs.length <= 0)
+        return not_found.className = "not-found";
 
     for (var i = 0; i < docs.length && i < 5; i++) {
         if (busca.value != "") {

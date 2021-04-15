@@ -91,3 +91,9 @@
   #btn-buscar:focus {
     outline: none;
   }
+
+  .not-found {
+      margin-top: 30px;
+      color: #f04747;
+      font-size: 15pt;
+  }
