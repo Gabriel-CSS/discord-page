@@ -1,19 +1,19 @@
 /* Tela de Login */
 
-  .box-login {
+.box-login {
     width: 100%;
     padding: 100px 0;
     color: #fff;
     display: block;
     background: #2e2e30 url('../images/bg-login.jpg') center;
     background-size: cover;
-  }
-  
-.hide {
-  display: none;
 }
 
-  .form-box {
+.hide {
+    display: none;
+}
+
+.form-box {
     width: 784px;
     height: 420px;
     margin: 0 auto;
@@ -21,63 +21,63 @@
     color: #72767d;
     background-color: #36393f;
     border-radius: 5px;
-  }
-  
-  .center-box {
+}
+
+.center-box {
     width: 720px;
     height: 340px;
     margin: 0 auto;
     text-align: center;
     display: flex;
-  }
-  
-  .left-box {
+}
+
+.left-box {
     width: 414px;
     float: left;
-  }
-  
-  .boas-vindas {
+}
+
+.boas-vindas {
     font-weight: 600;
     margin-top: 30px;
     margin-bottom: 8px;
     font-size: 24px;
     line-height: 30px;
     color: #fff;
-  }
-  
-  .animados {
+}
+
+.animados {
     color: #b9bbbe;
     font-size: 16px;
     line-height: 20px;
     font-family: Whitney-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  
-  .login-infos {
+}
+
+.login-infos {
     width: 100%;
     margin-top: 20px;
     text-align: left;
-  }
-  
-  .login-entrada {
+}
+
+.login-entrada {
     margin-bottom: 8px;
-  }
-  
-  h5 {
+}
+
+h5 {
     font-size: 12px;
     line-height: 16px;
     font-weight: 500;
     color: #8e9297;
-  }
-  
-  .div-input {
+}
+
+.div-input {
     display: flex;
     font-size: 16px;
     margin-top: 6px;
     border-radius: 3px;
     background-color: rgb(0, 0, 0, 0.1);
-  }
-  
-  .input {
+}
+
+.input {
     background-color: #00000000;
     padding: 10px;
     height: 40px;
@@ -88,29 +88,29 @@
     border-radius: 3px;
     color: #bbbbbb;
     font-family: Whitney-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  
-  .input:hover {
+}
+
+.input:hover {
     border-color: #000;
-  }
-  
-  .input:focus,
-  .input:active {
+}
+
+.input:focus,
+.input:active {
     outline: none;
     border-color: #7289da;
-  }
-  
-  .login-senha {
+}
+
+.login-senha {
     margin-top: 20px;
-  }
-  
-  .left-box a {
+}
+
+.left-box a {
     color: #7289da;
     font-size: 14px;
     line-height: 16px;
-  }
-  
-  #btn-login {
+}
+
+#btn-login {
     color: #fff;
     background-color: #7289da;
     font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -123,73 +123,85 @@
     min-width: 130px;
     min-height: 44px;
     border: none;
-  }
-  
-  #btn-login:hover {
+}
+
+#btn-login:hover {
     background-color: #677bc4;
-  }
-  
-  #btn-login:active {
+}
+
+#btn-login:active {
     background-color: #5b6eae;
-  }
-  
-  #btn-login:focus {
+}
+
+#btn-login:focus {
     outline: none;
-  }
-  
-  .registrar span {
+}
+
+.registrar span {
     font-size: 14px;
     line-height: 16px;
     font-family: Whitney-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  
-  .right-box {
+}
+
+.right-box {
     width: 240px;
     margin: 0 auto;
     margin-left: 75px;
     float: right;
-  }
-  
-  .right-box img {
+}
+
+.right-box img {
     border-radius: 4px;
     margin-top: 51px;
-  }
-  
-  .right-box h1 {
+}
+
+.right-box h1 {
     margin-top: 20px;
     margin-bottom: 8px;
     font-size: 24px;
     line-height: 30px;
     color: #fff;
-  }
-  
-  .info-qrcode {
+}
+
+.info-qrcode {
     color: #b9bbbe;
     font-size: 16px;
     line-height: 20px;
     font-family: Whitney-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
     display: flex;
-  }
-  
-  #error-span {
+}
+
+#error-span {
     font-size: 15px;
     margin-top: 6px;
-  }
-  
-  .error,
-  #error-span {
+}
+
+.error,
+#error-span {
     color: #f04747;
-  }
-  
-  button {
+}
+
+button {
     cursor: pointer;
-  }
+}
 
-  .login-infos a:hover {
+.login-infos a:hover {
     text-decoration: underline;
-  }
-
+}
 
 @media screen and (max-width: 415px) {
-  
+    .form-box {
+        width: 100%;
+    }
+    .center-box {
+        width: 100%;
+    }
+    .left-box {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+    .right-box {
+        display: none;
+    }
 }

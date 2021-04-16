@@ -1,25 +1,24 @@
-
 const url = "https://reqres.in/api/";
 var _token = localStorage.getItem("token"),
-box_login = document.getElementsByClassName("box-login")[0],
-box_busca = document.getElementsByClassName("box-busca")[0],
-div_entrar = document.getElementById("div-entrar"),
-error_span = document.getElementById("error-span");
-    
-    if(_token) {
-        logar();
-    }else{
-        deslogar();
-    }
+    box_login = document.getElementsByClassName("box-login")[0],
+    box_busca = document.getElementsByClassName("box-busca")[0],
+    div_entrar = document.getElementById("div-entrar"),
+    error_span = document.getElementById("error-span");
 
-function logar(){
+if (_token) {
+    logar();
+} else {
+    deslogar();
+}
+
+function logar() {
     box_login.className = "box-login hide";
     box_busca.className = "box-busca";
     div_entrar.innerHTML = "Deslogar";
     div_entrar.className = "logado";
 }
 
-function deslogar(){
+function deslogar() {
     localStorage.removeItem("token");
     box_login.className = "box-login";
     box_busca.className = "box-busca hide";
@@ -29,35 +28,33 @@ function deslogar(){
 }
 
 function onClickEntrar() {
-    if(div_entrar.className === "logado"){
+    if (div_entrar.className === "logado") {
         deslogar();
-        error_span.innerHTML = "Você deslogou. Logue novamente para ver a tela de busca.";
-    }else if(div_entrar.className === "deslogado"){
-        console.log("agora voce vai logar");
+        error_span.innerHTML = "Você está deslogado.";
     }
 }
 
 document.getElementById("btn-login")
-    .addEventListener("click", async () => {
+    .addEventListener("click", async() => {
 
         var entrada = document.getElementsByClassName("input")[0].value,
             senha = document.getElementsByClassName("input")[1].value,
             email_h5 = document.getElementsByTagName("h5")[0],
             senha_h5 = document.getElementsByTagName("h5")[1];
 
-            error_span.innerHTML = "";
-            email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE";
-            senha_h5.innerHTML = "SENHA";
-            email_h5.className = "";
-            senha_h5.className = "";
+        error_span.innerHTML = "";
+        email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE";
+        senha_h5.innerHTML = "SENHA";
+        email_h5.className = "";
+        senha_h5.className = "";
 
-            if(entrada === "" && senha === ""){
-                senha_h5.className = "error";
-                senha_h5.innerHTML = "SENHA - Este campo é obrigatório";
-                email_h5.className = "error";
-                return email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE - Este campo é obrigatório";
-            }
-        
+        if (entrada === "" && senha === "") {
+            senha_h5.className = "error";
+            senha_h5.innerHTML = "SENHA - Este campo é obrigatório";
+            email_h5.className = "error";
+            return email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE - Este campo é obrigatório";
+        }
+
         var params = {
             // email: "eve.holt@reqres.in",
             // password: "cityslicka"
@@ -67,12 +64,12 @@ document.getElementById("btn-login")
 
         axios.post(`${url}login/`, params)
             .then((res) => {
-                if(res.status === 200){
+                if (res.status === 200) {
                     var res2 = res.data;
                     _token = res2.token;
-                    error_span.innerHTML = "Você logou com sucesso. Logo a tela de busca será mostrada";
+                    error_span.innerHTML = "Logado com sucesso. Aguarde a tela de busca...";
                     localStorage.setItem("token", _token);
-                    setTimeout(function(){
+                    setTimeout(function() {
                         logar();
                     }, 4000);
                 }
@@ -81,15 +78,15 @@ document.getElementById("btn-login")
                 console.log(error.response.data);
                 var error_msg = error.response.data.error;
 
-                if(error_msg === "user not found"){
+                if (error_msg === "user not found") {
                     email_h5.className = "error";
                     return email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE - Usuário não encontrado";
                 }
-                if(error_msg === "Missing password"){
+                if (error_msg === "Missing password") {
                     senha_h5.className = "error";
                     return senha_h5.innerHTML = "SENHA - Este campo é obrigatório";
                 }
-                if(error_msg === "Missing email or username"){
+                if (error_msg === "Missing email or username") {
                     email_h5.className = "error";
                     return email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE - Este campo é obrigatório";
                 }
