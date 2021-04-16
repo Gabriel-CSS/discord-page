@@ -2,22 +2,29 @@
 
 .box-login {
     width: 100%;
-    padding: 100px 0;
+    height: 100vh;
+    top: 0;
+    left: 0;
     color: #fff;
-    display: block;
-    background: #2e2e30 url('../images/bg-login.jpg') center;
-    background-size: cover;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: rgba(40, 40, 80, 0.3);
+}
+
+.show-box-login {
+    visibility: visible;
 }
 
 .hide {
     display: none;
+    visibility: hidden;
 }
 
 .form-box {
     width: 784px;
     height: 420px;
     margin: 0 auto;
-    margin-top: 100px;
     color: #72767d;
     background-color: #36393f;
     border-radius: 5px;
@@ -141,6 +148,14 @@ h5 {
     font-size: 14px;
     line-height: 16px;
     font-family: Whitney-light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cancelar {
+    float: right;
+}
+
+.cancelar a {
+    color: #f04747;
 }
 
 .right-box {

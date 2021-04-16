@@ -15,19 +15,19 @@
     <div class="wrapper">
         <div class="box-superior">
             <nav>
-                <a class="logo" href="index.html">
+                <a class="logo" href="">
                     <img src="images/discord-logo-white.png" width="140px" height="45px">
                 </a>
 
                 <div class="links-menu">
-                    <a class="links" href="index.html">Baixar</a>
-                    <a class="links" href="index.html">Por que usar o Discord?</a>
-                    <a class="links" href="index.html">Nitro</a>
-                    <a class="links" href="index.html">Segurança</a>
-                    <a class="links" href="index.html">Suporte</a>
+                    <a class="links" href="">Baixar</a>
+                    <a class="links" href="">Por que usar o Discord?</a>
+                    <a class="links" href="">Nitro</a>
+                    <a class="links" href="">Segurança</a>
+                    <a class="links" href="">Suporte</a>
                 </div>
 
-                <a class="entrar" href="#id-login" onclick="onClickEntrar()">
+                <a class="entrar" href="javascript:void(0)" onclick="onClickEntrar()">
                     <div id="div-entrar" class="deslogado">
                         Entrar
                     </div>
@@ -45,7 +45,7 @@
 
                 <div class="painel-lateral">
                     <div class="div-interna">
-                        <a class="logo" href="index.html">
+                        <a class="logo" href="">
                             <img src="images/discord-logo-black.png" width="140px" height="45px">
                         </a>
                         <button class="fechar-btn">
@@ -60,18 +60,18 @@
                         </button>
                         <hr>
                         <ul class="links-mobile">
-                            <li><a href="index.html" class="selected">Início</a></li>
-                            <li><a href="index.html">Baixar</a></li>
-                            <li><a href="index.html">Por que usar o Discord?</a></li>
-                            <li><a href="index.html">Nitro</a></li>
-                            <li><a href="index.html">Segurança ></a></li>
-                            <li><a href="index.html">Academia de Moderadores ></a></li>
-                            <li><a href="index.html">Suporte</a></li>
+                            <li><a href="" class="selected">Início</a></li>
+                            <li><a href="">Baixar</a></li>
+                            <li><a href="">Por que usar o Discord?</a></li>
+                            <li><a href="">Nitro</a></li>
+                            <li><a href="">Segurança ></a></li>
+                            <li><a href="">Academia de Moderadores ></a></li>
+                            <li><a href="">Suporte</a></li>
                         </ul>
                     </div>
 
                     <div class="div-inferior">
-                        <a href="index.html" class="baixar-playstore-lateral">
+                        <a href="" class="baixar-playstore-lateral">
                             <div>
                                 <svg width="24" height="24" viewBox="0 0 24 24">
                                     <g fill="currentColor">
@@ -102,7 +102,7 @@
                     </div>
 
                     <div class="main-links">
-                        <a href="index.html" class="baixar-dc">
+                        <a href="" class="baixar-dc">
                             <div class="div-baixar">
                                 <svg width="24" height="24" viewBox="0 0 24 24">
                                     <g fill="currentColor">
@@ -117,7 +117,7 @@
                             </div>
                         </a>
 
-                        <a href="index.html" class="baixar-playstore">
+                        <a href="" class="baixar-playstore">
                             <div>
                                 <svg width="24" height="24" viewBox="0 0 24 24">
                                     <g fill="currentColor">
@@ -132,7 +132,7 @@
                             </div>
                         </a>
 
-                        <a href="index.html" class="abrir-dc">
+                        <a href="" class="abrir-dc">
                             <div>
                                 <p>Abra o Discord no seu navegador</p>
                             </div>
@@ -147,7 +147,7 @@
 
         <!-- Tela de Login -->
         <div class="box-login">
-            <div id="id-login" class="form-box">
+            <div class="form-box">
                 <div class="center-box">
                     <div class="left-box">
                         <div class="boas-vindas">
@@ -170,13 +170,18 @@
                                 </div>
                             </div>
                             <p id="error-span"></p>
-                            <a href="../index.html">Esqueceu sua senha?</a>
+                            <a href="">Esqueceu sua senha?</a>
                             <button type="submit" id="btn-login">
                                 Entrar
                             </button>
                             <div class="registrar">
                                 <span>Precisando de uma conta?</span>
-                                <a href="../index.html">Registre-se</a>
+                                <a href="">Registre-se</a>
+                                <div class="cancelar">
+                                    <a href="javascript:void(0)" onclick="hideBoxLogin()">
+                                        Cancelar login
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,7 +197,7 @@
             </div>
         </div>
 
-        <div class="box-busca">
+        <div id="id-busca" class="box-busca">
             <div class="div-busca">
                 <div class="center-busca">
                     <div class="boas-vindas">

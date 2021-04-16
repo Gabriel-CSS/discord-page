@@ -9,6 +9,7 @@ if (_token) {
     logar();
 } else {
     deslogar();
+    box_login.className = "box-login hide";
 }
 
 function logar() {
@@ -30,8 +31,13 @@ function deslogar() {
 function onClickEntrar() {
     if (div_entrar.className === "logado") {
         deslogar();
-        error_span.innerHTML = "Você está deslogado.";
+    } else {
+        box_login.className = "box-login show-box-login";
     }
+}
+
+function hideBoxLogin() {
+    box_login.className = "box-login hide";
 }
 
 document.getElementById("btn-login")
@@ -71,6 +77,7 @@ document.getElementById("btn-login")
                     localStorage.setItem("token", _token);
                     setTimeout(function() {
                         logar();
+                        window.location.assign("../#id-busca");
                     }, 4000);
                 }
             })
