@@ -101,3 +101,62 @@
 .hide {
     display: none;
 }
+
+@media screen and (max-width: 415px) {
+    .box-busca {
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .div-busca {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .center-busca {
+        width: 90%;
+    }
+    .busca-resultados {
+        width: 90%;
+        display: block;
+        padding: 0;
+        margin: 15px auto;
+        text-align: center;
+    }
+    .center-container {
+        width: 98%;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .nome-serie {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+        display: block;
+    }
+    .resultado-left {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .resultado-right {
+        float: none;
+        width: 98%;
+        padding: 0;
+        margin: 10px 0 0 10px;
+        text-align: left;
+        border-left: none;
+        display: block;
+    }
+    .not-found {
+        width: 100%;
+    }
+    .hide {
+        display: none;
+    }
+}
