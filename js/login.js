@@ -55,9 +55,17 @@ document.getElementById("btn-login")
         email_h5.className = "";
         senha_h5.className = "";
 
-        if (entrada === "" && senha === "") {
+        if ((entrada === "" || !entrada.trim()) && (senha === "" || !senha.trim())) {
             senha_h5.className = "error";
             senha_h5.innerHTML = "SENHA - Este campo é obrigatório";
+            email_h5.className = "error";
+            return email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE - Este campo é obrigatório";
+        }
+        if (senha === "" || !senha.trim()) {
+            senha_h5.className = "error";
+            return senha_h5.innerHTML = "SENHA - Este campo é obrigatório";
+        }
+        if (entrada === "" || !entrada.trim()) {
             email_h5.className = "error";
             return email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE - Este campo é obrigatório";
         }
@@ -91,14 +99,6 @@ document.getElementById("btn-login")
                 if (error_msg === "user not found") {
                     email_h5.className = "error";
                     return email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE - Usuário não encontrado";
-                }
-                if (error_msg === "Missing password") {
-                    senha_h5.className = "error";
-                    return senha_h5.innerHTML = "SENHA - Este campo é obrigatório";
-                }
-                if (error_msg === "Missing email or username") {
-                    email_h5.className = "error";
-                    return email_h5.innerHTML = "E-MAIL OU NÚMERO DE TELEFONE - Este campo é obrigatório";
                 }
             })
     });

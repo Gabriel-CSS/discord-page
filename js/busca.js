@@ -12,7 +12,7 @@ function limparBusca() {
 async function buscar() {
     limparBusca();
 
-    if (input.value === "") {
+    if (input.value === "" || !input.value.trim()) {
         not_found.innerHTML = "É necessário informar algum valor para a busca!";
         return not_found.className = "not-found";
     }
