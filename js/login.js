@@ -17,6 +17,7 @@ function logar() {
     box_busca.className = "box-busca";
     div_entrar.innerHTML = "Deslogar";
     div_entrar.className = "logado";
+    document.getElementsByClassName("input")[1].value = "";
 }
 
 function deslogar() {
@@ -77,6 +78,8 @@ document.getElementById("btn-login")
                     localStorage.setItem("token", _token);
                     setTimeout(function() {
                         logar();
+                        limparBusca();
+                        document.getElementsByClassName("input")[2].value = "";
                         window.location.assign("../#id-busca");
                     }, 4000);
                 }
