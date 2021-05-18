@@ -19,7 +19,7 @@ Senha: cityslicka
 
     Elaboração de uma página web de conteúdo estático, utilizando apenas as tecnologias HTML e CSS para construção de um layout de um website.
 
-### PROJETO 2 - JavaScript e AJAX:
+### PROJETO 2 - JavaScript e AJAX ✔️:
 
     Implementação de funcionalidade no lado cliente de uma aplicação web, utilizando principalmente JavaScript integração com APIs abertas de dados.
 
@@ -27,3 +27,4 @@ Senha: cityslicka
 
     Implementação de funcionalidade do lado servidor de uma aplicação web, utilizando a plataforma Node.js.
     Deve também ser implementado o lado cliente de uma aplicação e essa aplicação deve ser integrada ao servidor.
+    Está parte do projeto será publicada em um repositório separado. (https://github.com/Gabriel-CSS/discord-page-3)
